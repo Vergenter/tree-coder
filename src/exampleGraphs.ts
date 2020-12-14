@@ -1,4 +1,8 @@
 import {Graph,s} from './graph';
+export const incorrectGraphLessEdges:Graph={
+    nodes:[s(11),s(12),s(13),s(14)],
+    edges:[[1,2],[2],[]]
+}
 export const knownGraph:Graph={
     nodes:[s(11),s(12),s(13),s(14)],
     edges:[[1,2],[2],[],[]]
