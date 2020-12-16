@@ -19,6 +19,11 @@ export interface Graph{
     nodes:Skill[];
     edges:number[][];
 }
+export function edgesToParent(edges:number[][]){
+    const inverseEdges = edges.map<number[]>(edge=>[]);
+    edges.forEach((node,nodeIndex)=>node.forEach(edge=>inverseEdges[edge].push(nodeIndex)));
+    return inverseEdges;
+}
 export function equals(g1:Graph){
     return (g2:Graph)=>
         g1.nodes.length===g2.nodes.length 
