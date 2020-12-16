@@ -1,5 +1,8 @@
 {
     "type": "commonjs",
+    "scripts": {
+        "test": "npx ts-node .\\src\\test.ts"
+    },
     "devDependencies": {
         "ts-node": "^9.1.1",
         "typescript": "^3.9.7"
